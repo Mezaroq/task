@@ -1,0 +1,11 @@
+<div class="wrapper">
+  <div class="group-list">
+    <a class="group-list__elem" *ngFor="let group of groups$ | async" [routerLink]="['/groups', group.id]">
+      <div>
+        <span>Group ID: {{group.id}}</span>
+        <span>Group name: {{group.name}}</span>
+      </div>
+      <span>Edit</span>
+    </a>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+[
+  {
+    "id": 12,
+    "name": "Friends",
+    "users": [
+      112
+    ]
+  },
+  {
+    "id": 157,
+    "name": "Family",
+    "users": [
+      158
+    ]
+  },
+  {
+    "id": 1999,
+    "name": "Coworkers",
+    "users": [
+      105,
+      119
+    ]
+  }
+]

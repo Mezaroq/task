@@ -1,0 +1,15 @@
+<div class="wrapper">
+  <ul class="group-list">
+    <li class="group-list__elem" *ngFor="let group of groupData" [id]="group.user.id">
+      <span>{{group.user.name}}</span>
+      <label>
+        <input type="checkbox" [checked]="group.checked" (click)="onClick(group.user.id)">
+      </label>
+    </li>
+  </ul>
+  <div class="buttons">
+    <button (click)="onSave()">Save</button>
+    <button (click)="onCancel()">Cancel</button>
+  </div>
+</div>
+<div class="loader" [class.active]="isLoading"></div>
